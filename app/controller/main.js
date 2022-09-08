@@ -60,13 +60,9 @@ function phoneChanged(obj) {
   console.log(loaiDt);
 }
 
-function updateTotalItem(arr) {
-  let total = 0;
-  for (let i = 0; i < arr.length; i++) {
-      const p = arr[i];
-      total += p.count;
-  }
-  return total;
-}
+
+
+var cart = [];
+
 
 
