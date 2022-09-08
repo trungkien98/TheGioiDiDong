@@ -55,3 +55,10 @@ function renderTable(data) {
 
   getEle("main-cart").innerHTML = content;
 }
+
+function phoneChanged(obj) {
+  var loaiDt = document.getElementById('typePhone').value;
+  console.log(loaiDt);
+}
+
+phoneChanged()
