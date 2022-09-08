@@ -62,3 +62,10 @@ function renderTable(data) {
 
   getEle("main-cart").innerHTML = content;
 }
+
+function phoneChanged(obj) {
+  var loaiDt = obj.value;
+  console.log(loaiDt);
+}
+
+var cart = [];
