@@ -34,7 +34,6 @@ function renderTable(data) {
       <p>Camera trước: ${product.frontCamera}</p>
       <p>Camera sau: ${product.backCamera}</p>
       <p>Màn hình: ${product.screen}</p>
-
       <span>${product.desc}</span>
     </div>
     <div class="purchase d-flex">
@@ -57,8 +56,17 @@ function renderTable(data) {
 }
 
 function phoneChanged(obj) {
-  var loaiDt = document.getElementById('typePhone').value;
+  var loaiDt = obj.value;
   console.log(loaiDt);
 }
 
-phoneChanged()
+function updateTotalItem(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+      const p = arr[i];
+      total += p.count;
+  }
+  return total;
+}
+
+
