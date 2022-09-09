@@ -70,3 +70,4 @@ function phoneChanged(obj) {
 var cart = [];
 var total = 0;
 
+
