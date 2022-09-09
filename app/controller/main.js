@@ -40,7 +40,7 @@ function renderTable(data) {
       <p class="product-price">${product.price}</p>
       <span class="btn-add">
         <div>
-          <button onclick="addItem(this)" class="add-btn">
+          <button onclick="addItem(this)" class="add-btn" data-action="add-to-cart">
             Add <i class="fas fa-chevron-right"></i>
           </button></div
       ></span>
@@ -63,6 +63,12 @@ function phoneChanged(obj) {
 
 
 var cart = [];
+var total = 0;
+
+const cartDom = document.querySelector(".sidenav");
+const addtocartbtnDom = document.querySelectorAll('[data-action="add-to-cart"]');
+
+
 
 
 
