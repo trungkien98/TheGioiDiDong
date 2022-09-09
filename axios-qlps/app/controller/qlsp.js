@@ -86,3 +86,14 @@ function addProduct() {
       console.log(error);
     });
 }
+
+function deleteProduct(id) {
+  service.deleteProductApi(id)
+  .then(function () {
+    //render list data
+    fetchData();
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+}
