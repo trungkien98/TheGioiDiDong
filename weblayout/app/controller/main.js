@@ -64,9 +64,14 @@ function renderTable(data) {
 
 function phoneChanged(obj) {
   var loaiDt = obj.value;
+
   console.log(loaiDt);
+
 }
 
 var cart = [];
+
 var total = 0;
+
+
 
