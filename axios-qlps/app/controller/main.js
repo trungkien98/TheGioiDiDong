@@ -34,19 +34,26 @@ function renderTable(data) {
       <p>Camera trước: ${product.frontCamera}</p>
       <p>Camera sau: ${product.backCamera}</p>
       <p>Màn hình: ${product.screen}</p>
-      <span>${product.desc}</span>
+
+      <span>${product.desc}</span> 
+
     </div>
+    
+     
+      <span class="btn-add ">
+        <div class="d-flex justify-content-between">
+         
+            <div class="d-flex">
+              <button class="btn-qty" onclick="qtyChange(this,'sub')"><i class="fas fa-chevron-left"></i></button>
+              <p class="qty">1</p>
+              <button class="btn-qty" onclick="qtyChange(this,'add')"><i class="fas fa-chevron-right"></i></button>
+            </div>
+             <button onclick="addItem(this)" class="add-btn btn btn-success">
+            Add to cart <i class="fas fa-chevron-right"></i></button>
+          </div
     <div class="purchase d-flex">
       <p class="product-price">${product.price}</p>
-      <span class="btn-add">
-        <div>
-          <button onclick="addItem(this)" class="add-btn" data-action="add-to-cart">
-            Add <i class="fas fa-chevron-right"></i>
-          </button></div
-      ></span>
     </div>
-  </div>
-</div>
           
           
       `;
@@ -60,21 +67,10 @@ function phoneChanged(obj) {
   console.log(loaiDt);
 }
 
-
-
 var cart = [];
 var total = 0;
 
-const cartDom = document.getElementsByClassName("sidenav");
-const addtocartbtnDom = document.querySelectorAll('[data-action="add-to-cart"]');
-
-function addItem() {
-  
-}
-
-console.log(cartDom);
-
-
-
-
-
+const cartDom = document.querySelector(".sidenav");
+const addtocartbtnDom = document.querySelectorAll(
+  '[data-action="add-to-cart"]'
+);

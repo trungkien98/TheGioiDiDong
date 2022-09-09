@@ -71,3 +71,12 @@ img {
   font-size: 36px;
   margin-left: 50px;
 }
+
+.btn-qty {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 2px 5px;
+}
+.btn-add p {
+  font-weight: 500;
+}
