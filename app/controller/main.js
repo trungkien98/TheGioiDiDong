@@ -38,6 +38,7 @@ function renderTable(data) {
       <span>${product.desc}</span> 
       <p class="product-price">Giá: ${product.price}</p>
     </div>
+<<<<<<< HEAD
     
      
       <span class="btn-add ">
@@ -51,6 +52,15 @@ function renderTable(data) {
              <button onclick="addItem(this)" class="add-btn btn btn-success">
             Add to cart <i class="fas fa-chevron-right"></i></button>
           </div
+=======
+    <div class="purchase d-flex">
+      <p class="product-price">${product.price}</p>
+      <span class="btn-add">
+        <div>
+          <button onclick="addItem(this)" class="add-btn" data-action="add-to-cart">
+            Add <i class="fas fa-chevron-right"></i>
+          </button></div
+>>>>>>> 25aff14f046dea9ac02c240aa292f5fb23c77530
       ></span>
     </div>
   
@@ -69,3 +79,15 @@ function phoneChanged(obj) {
 }
 
 var cart = [];
+<<<<<<< HEAD
+=======
+var total = 0;
+
+const cartDom = document.querySelector(".sidenav");
+const addtocartbtnDom = document.querySelectorAll('[data-action="add-to-cart"]');
+
+
+
+
+
+>>>>>>> 25aff14f046dea9ac02c240aa292f5fb23c77530
