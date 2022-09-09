@@ -69,12 +69,4 @@ function phoneChanged(obj) {
 
 var cart = [];
 var total = 0;
-<<<<<<< HEAD
 
-
-=======
-const cartDom = document.querySelector(".sidenav");
-const addtocartbtnDom = document.querySelectorAll(
-  '[data-action="add-to-cart"]'
-);
->>>>>>> 96cbd6b81954b4239051bdab4bb66df272599174
