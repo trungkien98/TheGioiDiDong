@@ -191,7 +191,6 @@ const productDetails = [
         <button onclick='this.classList.toggle("fav")' class='heart'><i class='fas fa-heart'></i></button>
       </div>
       <div class='wrapper'>
-        <h5>${heading}</h5>
         <p>${desc}</p>
       </div>
       <div class='purchase'>
