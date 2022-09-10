@@ -176,7 +176,7 @@ const productDetails = [
   
   //Ui components {
   function Product(product = {}) {
-    let { name, price, img, heading, desc } = product;
+    let { name, price, img, frontCamera, backCamera , screen , desc } = product;
     return `
   <div class='card'>
     <div class='top-bar'>
@@ -191,6 +191,9 @@ const productDetails = [
         <button onclick='this.classList.toggle("fav")' class='heart'><i class='fas fa-heart'></i></button>
       </div>
       <div class='wrapper'>
+      <p>Camera trước: ${frontCamera}</p>
+      <p>Camera sau: ${backCamera}</p>
+      <p>Màn hình: ${screen}</p>
         <p>${desc}</p>
       </div>
       <div class='purchase'>
