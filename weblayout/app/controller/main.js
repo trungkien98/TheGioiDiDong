@@ -74,4 +74,10 @@ var cart = [];
 var total = 0;
 
 
+function addItem() {
+
+}
+
+
+
 
