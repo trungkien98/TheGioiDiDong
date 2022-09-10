@@ -11,8 +11,8 @@ function Product(
 ) {
   this.id = _id;
   this.name = _name;
-  this.frontCam = _frontCam;
-  this.backCam = _backCam;
+  this.frontCamera = _frontCam;
+  this.backCamera = _backCam;
   this.screen = _screen;
   this.price = _price;
   this.img = img;

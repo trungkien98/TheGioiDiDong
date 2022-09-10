@@ -8,7 +8,7 @@ function Service() {
 
   this.deleteProductApi = function (id) {
     return axios({
-      url: `https://62ff797734344b6431fa3c2c.mockapi.io/api/QLTT${id}`,
+      url: `https://62ff797734344b6431fa3c2c.mockapi.io/api/QLTT/${id}`,
       method: "DELETE",
     });
   };
@@ -28,9 +28,9 @@ function Service() {
     });
   };
 
-  this.updateProductApi = function (product) {
+  this.updateToList = function (product) {
     return axios({
-      url: `https://62ff797734344b6431fa3c2c.mockapi.io/api/phone/${product.id}`,
+      url: `https://62ff797734344b6431fa3c2c.mockapi.io/api/QLTT/${product.id}`,
       method: "PUT",
       data: product,
     });

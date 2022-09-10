@@ -48,18 +48,11 @@
             <div class="col-md-4">
               <!-- BEGIN TÌM KIẾM -->
               <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nhập từ khóa"
-                  aria-label="Recipient's username"
-                  aria-describedby="basic-addon2"
-                />
-                <div class="input-group-append">
-                  <span class="input-group-text" id="basic-addon2"
-                    ><i class="fa fa-search"></i
-                  ></span>
-                </div>
+                <select id="search" type="text" class="form-control">
+                  <option value="0">Tất cả</option>
+                  <option>Iphone</option>
+                  <option>Samsung</option>
+                </select>
               </div>
               <!-- END TÌM KIẾM -->
             </div>
@@ -114,14 +107,7 @@
                     class="form-control"
                     placeholder="Nhập vào tên sản phẩm"
                   />
-                </div>
-                <div class="form-group">
-                  <label>Màn hình</label>
-                  <input
-                    id="screen"
-                    class="form-control"
-                    placeholder="Nhập vào giá"
-                  />
+                  <div class="thongBao" style="color: red" id="tbName"></div>
                 </div>
                 <div class="form-group">
                   <label>Camera trước</label>
@@ -130,6 +116,11 @@
                     class="form-control"
                     placeholder="Nhập vào giá"
                   />
+                  <div
+                    class="thongBao"
+                    style="color: red"
+                    id="tbFrontCam"
+                  ></div>
                 </div>
                 <div class="form-group">
                   <label>Camera sau</label>
@@ -138,15 +129,30 @@
                     class="form-control"
                     placeholder="Nhập vào giá"
                   />
+                  <div class="thongBao" style="color: red" id="tbBackCam"></div>
+                </div>
+                <div class="form-group">
+                  <label>Màn hình</label>
+                  <input
+                    id="screen"
+                    class="form-control"
+                    placeholder="Nhập vào giá"
+                  />
+                  <div class="thongBao" style="color: red" id="tbScreen"></div>
                 </div>
 
                 <div class="form-group">
                   <label>Loại dt</label>
-                  <input
+                  <select
                     id="type"
                     class="form-control"
                     placeholder="Nhập vào giá"
-                  />
+                  >
+                    <option>Loại điện thoại</option>
+                    <option>Iphone</option>
+                    <option>Samsung</option>
+                  </select>
+                  <div class="thongBao" style="color: red" id="tbType"></div>
                 </div>
                 <div class="form-group">
                   <label>Giá</label>
@@ -155,6 +161,7 @@
                     class="form-control"
                     placeholder="Nhập vào giá"
                   />
+                  <div class="thongBao" style="color: red" id="tbPrice"></div>
                 </div>
                 <div class="form-group">
                   <label>Hình Ảnh</label>
@@ -163,10 +170,12 @@
                     class="form-control"
                     placeholder="Nhập vào hình sản phẩm"
                   />
+                  <div class="thongBao" style="color: red" id="tbImg"></div>
                 </div>
                 <div class="form-group">
                   <label for="">Mô tả: </label>
                   <textarea id="desc" class="form-control"></textarea>
+                  <div class="thongBao" style="color: red" id="tbDesc"></div>
                 </div>
               </div>
               <!-- Modal footer -->
@@ -198,8 +207,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="../models/Valid.js"></script>
     <script src="../models/product.js"></script>
-
     <script src="../service/service.js"></script>
     <script src="../controller/qlsp.js"></script>
   </body>
