@@ -74,8 +74,18 @@ var cart = [];
 var total = 0;
 
 
-function addItem() {
+var cartItem = {
+  product: {id: 1, price: 1000, name : 'iphone X' },
+  quantity: 1
+  }
 
+  cart.push(cartItem)
+
+  console.log(cart);
+
+
+function addItem() {
+  
 }
 
 
